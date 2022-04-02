@@ -69,3 +69,12 @@ CREATE TABLE Record(
 	recordID integer NOT NULL,
 	treatmentID integer NOT NULL,
 	PRIMARY KEY (recordID,treatmentID));
+	
+CREATE TABLE Treatment(
+	treatmentType VARCHAR(255),
+	procedureTypeCode VARCHAR(255),
+	medication VARCHAR(255),
+	sympotoms VARCHAR[],
+	tooth VARCHAR(255),
+	dentistComments VARCHAR(255)
+);
