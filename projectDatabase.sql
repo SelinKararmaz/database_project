@@ -90,3 +90,17 @@ CREATE TABLE AppointmentProcedure(
 	totalCharge float
 );
 ALTER TABLE appointmentProcedure ADD PRIMARY KEY (procedureTypeCode);
+CREATE TABLE Appointment(
+	appointmentID integer,
+	patientID integer,
+	dentistID integer,
+	appointmentDate date,
+	startTime time,
+	duration time,
+	endTime time,
+	assignedRoom VARCHAR(255),
+	apointmentType VARCHAR(255),
+	status VARCHAR(255),
+	PRIMARY KEY (appointmentID)
+	
+);
