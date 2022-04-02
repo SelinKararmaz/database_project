@@ -42,3 +42,23 @@ CREATE TABLE IF NOT EXISTS Branch
 	emailaddress character varying(255),
     phonenumber character varying(255)
 );
+
+CREATE TABLE IF NOT EXISTS Patient
+(
+	patient_id integer NOT NULL,
+    firstname VARCHAR(255) NOT NULL,
+    lastname VARCHAR(255) NOT NULL,
+    houseno integer,
+    street VARCHAR(255),
+    city VARCHAR(255),
+    province VARCHAR(255),
+    postalcode VARCHAR(255),
+	gender VARCHAR(255),
+	insuranceNo integer,
+	SSN integer,
+	emailAddress VARCHAR(255),
+	dob date,
+    phonenumber VARCHAR(255),
+    age integer,
+    CONSTRAINT patient_pkey PRIMARY KEY (patient_id)
+);
