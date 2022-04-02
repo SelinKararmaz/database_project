@@ -64,3 +64,8 @@ CREATE TABLE IF NOT EXISTS Patient
 );
 
 ALTER TABLE Branch ADD PRIMARY KEY (branchNo);
+
+CREATE TABLE Record(
+	recordID integer NOT NULL,
+	treatmentID integer NOT NULL,
+	PRIMARY KEY (recordID,treatmentID));
