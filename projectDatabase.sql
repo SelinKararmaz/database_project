@@ -1,6 +1,6 @@
-SET SEARCH_PATH = 'project';
+Set search_path = 'project','public';
 
-CREATE TABLE IF NOT EXISTS "DCMS"."Employee"
+CREATE TABLE IF NOT EXISTS "Employee"
 (
     "ID" integer NOT NULL,
     "firstName" VARCHAR(255) NOT NULL,
