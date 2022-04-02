@@ -1,4 +1,4 @@
-SET SEARCH_PATH = 'project'
+SET SEARCH_PATH = 'project';
 
 CREATE TABLE IF NOT EXISTS "DCMS"."Employee"
 (
