@@ -78,3 +78,14 @@ CREATE TABLE Treatment(
 	tooth VARCHAR(255),
 	dentistComments VARCHAR(255)
 );
+CREATE TABLE AppointmentProcedure(
+	procedureTypeCode VARCHAR(255),
+	procedureType VARCHAR(255),
+	patientID integer,
+	procedureDate date,
+	description VARCHAR(255),
+	tooth VARCHAR(255),
+	procedureChange VARCHAR(255),
+	insuranceDeductions VARCHAR(255),
+	totalCharge float
+);
