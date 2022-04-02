@@ -62,3 +62,5 @@ CREATE TABLE IF NOT EXISTS Patient
     age integer,
     CONSTRAINT patient_pkey PRIMARY KEY (patient_id)
 );
+
+ALTER TABLE Branch ADD PRIMARY KEY (branchNo);
