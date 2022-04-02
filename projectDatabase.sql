@@ -1,6 +1,6 @@
 Set search_path = 'project','public';
 
-CREATE TABLE IF NOT EXISTS public.employee
+CREATE TABLE IF NOT EXISTS Employee
 (
     employee_id integer NOT NULL,
     firstname character varying(255) NOT NULL,
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS public.employee
     CONSTRAINT employee_pkey PRIMARY KEY (employee_id)
 )
 
-CREATE TABLE IF NOT EXISTS "Review"
+CREATE TABLE IF NOT EXISTS Review
 (
     Review_ID integer NOT NULL,
     Patient_ID integer NOT NULL,
