@@ -89,3 +89,4 @@ CREATE TABLE AppointmentProcedure(
 	insuranceDeductions VARCHAR(255),
 	totalCharge float
 );
+ALTER TABLE appointmentProcedure ADD PRIMARY KEY (procedureTypeCode);
