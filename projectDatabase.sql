@@ -30,3 +30,15 @@ CREATE TABLE IF NOT EXISTS Review
     CONSTRAINT Review_pkey PRIMARY KEY (Review_ID)
 	
 )
+
+CREATE TABLE IF NOT EXISTS Branch
+(
+	branchNo integer NOT NULL,
+	houseno integer,
+    street character varying(255),
+    city character varying(255),
+    province character varying(255),
+    postalcode character varying(255),
+	emailaddress character varying(255),
+    phonenumber character varying(255)
+);
